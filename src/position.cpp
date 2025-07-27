@@ -1017,7 +1017,7 @@ bool Position::rule_judge(Value& result, int ply) {
                 if (filter[st->key] <= 1)
                 {
                     // Not exceeding rule 60 and have the same previous step
-                    if (st->rule60 < 120 && st->previous->key == stp->previous->key)
+                    if (st->rule60 < 130 && st->previous->key == stp->previous->key)
                     {
                         // Even if we entering this loop again, it will not lead to a 3 fold repetition
                         StateInfo* prev = st->previous;
